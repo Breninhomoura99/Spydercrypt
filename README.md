@@ -9,3 +9,5 @@ Este site contém informações sobre os vilões e o homem-aranha com botões fu
 Disponivel em: https://spidercrypts.web.app
 
 <img width="1336" height="642" alt="image" src="https://github.com/user-attachments/assets/7d1be0cb-fe49-4860-8ae5-9ed84f57cf72" />
+<img width="1143" height="593" alt="image" src="https://github.com/user-attachments/assets/420ae523-1435-4dab-9b16-08a807eabf83" />
+
