@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--====== FAVICON ======-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon//site.webmanifest">
+
+    <!--=============== REMIX ICONS ===============-->
+
+    <!--====== SWIPER CSS ======-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!--====== CSS ======-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--========= ICON ========-->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- CONTADOR-->
+
+    <div class="preloader">
+        <div class="counter">0</div>
+    </div> 
+
+    <!--====== JS DO CONTADOR ======-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script type="text/javascript">
+                function counter(){
+                    var count = setInterval(function(){
+                        var c = parseInt($('.counter').text());
+                        $('.counter').text((++c).toString());
+                        if (c == 100){
+                            clearInterval(count);
+                            $('.counter').addClass('hide')
+                            $('.preloader').addClass('active')
+                        }
+                    },60)
+                }
+                counter()
+                </script> 
+
+    <!--====== CABEÇA ======-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <i class="ri-gitlab-line"></i>
+                Spidercrypt
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <!--item2-->
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre</a>
+                    </li>
+                    <!--item3-->
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">Vilões</a>
+                    </li>
+                    <!--item4-->
+                    <li class="nav__item">
+                        <a href="#venom" class="nav__link">Featured</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-circle-line"></i>
+                </div>
+            </div>
+
+            <!--Botao-->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--====== MAIN ======-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="shape shape__big"></div>
+            <div class="shape shape__small"></div>
+
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Spider-Man: The History
+                    </h1>
+
+                    <h2 class="home__subtitle">
+                        Peter Paker
+                    </h2>
+
+                    <h3 class="home__elec">
+                        <i class="ri-reactjs-fill"></i> Super-Hero
+                    </h3>
+                </div>
+
+                <img src="img/tom.png" alt="" class="home__img">
+
+                <div class="home__ca">
+                    <div class="home__ca-data">
+                        <div class="home__ca-icon">
+                            <i class="ri-body-scan-fill"></i>
+                        </div>
+                        <h2 class="home__ca-number">1,77</h2>
+                        <h3 class="home__ca-name">Altura</h3>
+                    </div>
+
+                    <!-- coisa 2-->
+
+                    <div class="home__ca-data">
+                        <div class="home__ca-icon">
+                            <i class="ri-flask-line"></i>
+                        </div>
+
+                        <h2 class="home__ca-number">15</h2>
+                        <h3 class="home__ca-name">Inteligencia</h3>
+                    </div>
+
+                    <!-- Coisa 3-->
+
+                    <div class="home__ca-data">
+                        <div class="home__ca-icon">
+                            <i class="ri-star-s-fill"></i>
+                        </div>
+
+                        <h2 class="home__ca-number">81</h2>
+                        <h3 class="home__ca-name">Habilidade</h3>
+                    </div>
+                </div>
+
+                <a href="#about" class="home__button">START</a>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__group">
+                    <img src="img/pngwing.com.png" alt="" class="about__img">
+                </div>
+                <div class="about__data">
+                    <h2 class="section__title about__title">
+                        Peter Parker
+                    </h2>
+
+                    <p class="about__description">
+                        Peter Parker perdeu seus pais, Richard e Mary Parker, quando era jovem. Órfão, ele teve que
+                        viver com seu Tio Ben e sua Tia May.
+                        Durante uma exposição de ciência, ele foi mordido por uma Aranha Radioativa, concedendo-lhe seus
+                        poderes.
+                        Ele decidiu usar esses poderes para seu próprio ganho egoísta, até que seu tio Ben morreu nas
+                        mãos de um Ladrão que ele poderia ter impedido.
+                        Foi nesse ponto que ele aprendeu "Com grandes poderes, também deve haver grandes
+                        responsabilidades", e decidiu viver de acordo com o mantra de seu tio e usar seus poderes como
+                        uma força para o bem como Homem-Aranha.
+                        Atual no universo cinematografico da marvel existem tres homens aranhas,
+                        interpretados por Tobey maguire, Andrew Garfield e Tom Holland.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== VILÕES ====================-->
+        <section class="popular section" id="popular">
+            <h2 class="section__title">
+                Escolha um vilão
+            </h2>
+
+            <div class="popular__container container swiper">
+                <div class="swiper-wrapper">
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Venom</h1>
+                        <h3 class="popular__subtitle">Eddie Brock</h3>
+
+                        <img src="img/venom.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-flashlight-fill"></i> 70
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-star-s-fill"></i> 85
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-body-scan-fill"></i> 2,2m
+                            </div>
+                        </div>
+                        <button class="button popular__button">
+                            <a href="#venom"> 
+                                <i class="ri-information-line"></i></a>
+                        </button>
+                    </article>
+
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Dr. Octopus</h1>
+                        <h3 class="popular__subtitle"> Dr. Otto Gunther Octavius</h3>
+
+                        <img src="img/octo.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-flashlight-fill"></i> 65
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-star-s-fill"></i> 70
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-body-scan-fill"></i> 1,78m
+                            </div>
+                        </div>
+                        <button class="button popular__button">
+                            <a href="#octo-2"><i class="ri-information-line"></i></a>
+                        </button>
+                    </article>
+
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Duende Verde</h1>
+                        <h3 class="popular__subtitle">Norman Osborn</h3>
+
+                        <img src="img/duende.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-flashlight-fill"></i> 69
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-star-s-fill"></i> 80
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-body-scan-fill"></i> 1,93m
+                            </div>
+                        </div>
+                        <button class="button popular__button">
+                            <a href="#duende-3"><i class="ri-information-line"></i></a>
+                        </button>
+                    </article>
+
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Mysterio</h1>
+                        <h3 class="popular__subtitle">Quentin Beck</h3>
+
+                        <img src="img/misterio.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-flashlight-fill"></i> 58
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-star-s-fill"></i> 87
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-body-scan-fill"></i> 1,68m
+                            </div>
+                        </div>
+                        <button class="button popular__button">
+                            <a href="#mysterio-4"><i class="ri-information-line"></i></a>
+                        </button>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Lagarto</h1>
+                        <h3 class="popular__subtitle">Dr. Curt Connors</h3>
+
+                        <img src="img/lagarto.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-flashlight-fill"></i> 70
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-star-s-fill"></i> 73
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-body-scan-fill"></i> 2,7m
+                            </div>
+                        </div>
+                        <button class="button popular__button">
+                            <a href="#lagarto-5"> <i class="ri-information-line"></i></a>
+                        </button>
+                    </article>
+
+                    <article class="popular__card swiper-slide">
+                        <div class="shape shape__smaller"></div>
+
+                        <h1 class="popular__title">Homem de areia</h1>
+                        <h3 class="popular__subtitle">Flint Marko</h3>
+
+                        <img src="img/sandman.png" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <div class="popular__data-group">
+                                <i class="ri-flashlight-fill"></i> 60
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-star-s-fill"></i> 70
+                            </div>
+
+
+                            <div class="popular__data-group">
+                                <i class="ri-body-scan-fill"></i> 1,80m
+                            </div>
+                        </div>
+                        <button class="button popular__button">
+                            <a href="#areia-6">
+                                <i class="ri-information-line"></i></a>
+                        </button>
+                    </article>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section" id="venom">
+            <div class="featured__container container grid">
+                <h2 class="section__title">
+                    Venom
+                </h2>
+                <div class="featured__group">
+                    <img src="img/venom_2.png" alt="" class="featured__img">
+
+                    <div class="featured__card featured__card-1">
+                        <h3 class="featured__card-title">Alienígena de Klyntar</h3>
+                        <p class="featured__card-description">Corrompido pelos sentimentos <br> de violência</p>
+                    </div>
+
+                    <div class="featured__card featured__card-2">
+                        <h3 class="featured__card-title">Habilidades</h3>
+                        <p class="featured__card-description">Fator de cura <br> Memória Genética <br> Presas Venenosas
+                        </p>
+                    </div>
+
+                    <div class="featured__card featured__card-3">
+                        <h3 class="featured__card-title">Fraquezas</h3>
+                        <p class="featured__card-description">Calor Intenso <br> Sonoridade</p>
+                    </div>
+                </div>
+
+            </div>
+
+                <div class="featured__data">
+                    <p class="featured__description-1">
+                        Venom é um simbionte alienígena que forma-se a partir de um líquido, material orgânico de
+                        espessura. Comumente, seu hóspede é Eddie Brock, um jornalista que pertence ao mesmo universo de
+                        Homem-Aranha. Sobretudo, a característica principal do personagem é o uniforme negro, mas também
+                        a desproporcional e assustadora mandíbula.
+                        Em resumo, Venom é um alienígena Klyntar corrompido pelos sentimentos de violência, de modo que
+                        seja viciado em raiva por causa do seu primeiro hospedeiro. Portanto, a história do Venom mostra
+                        que ele está sendo corrompido gradativamente por isso, de modo que se torne mais sádico,
+                        arrogante e zombador com o tempo.
+                    </p>
+                </div>
+        </section>
+
+        <section class="featured section-2" id="octo-2">
+
+            <div class="featured__container-2 container grid">
+                <h2 class="section__title">
+                    Dr. Octopus
+                </h2>
+    
+                <div class="featured__group-2">
+                    <img src="img/octo 2.png" alt="" class="featured__img-2">
+
+                    <div class="featured__card-2 featured__card-4">
+                        <h3 class="featured__card-title-2">Gênio Humano</h3>
+                        <p class="featured__card-description-2">PHD em ciência nuclear e <br> física atômica </p>
+                    </div>
+
+                    <div class="featured__card featured__card-5">
+                        <h3 class="featured__card-title-2">Habilidades</h3>
+                        <p class="featured__card-description-2">Intelecto nivel gênio<br> Usa apêndices mecânicos
+                            superfortes e duráveis <br>Controle telepático sobre seus braços mecânicos</p>
+                    </div>
+
+                    <div class="featured__card featured__card-6">
+                        <h3 class="featured__card-title-2">Fraquezas</h3>
+                        <p class="featured__card-description-2">Nanotecnologia <br> Choques de alta voltagem</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="featured2__data">
+
+                    <p class="featured2__description-2">
+                        Otto Octavius era um cientista nuclear que desenvolveu dois pares de braços mecânicos
+                        controlados remotamente para manipular materiais radioativos. Um dia, seus experimentos dão
+                        errado, fundindo as partes robóticas ao seu corpo. O excesso de radiação mexe com o seu cérebro
+                        e ele se torna o perigoso vilão Doutor Octopus.
+
+                        Mas esta é apenas parte de sua trágica história. Na verdade, ele cresceu em um lar dividido: seu
+                        pai era um homem violento e sua mãe, superprotetora. Durante uma briga, ao descobrir uma atitude
+                        hipócrita de sua mãe, ela sofreu um ataque cardíaco e faleceu. Consumido pela culpa, ele acabou
+                        errando o experimento que o transformou em um vilão.
+                    </p>
+                </div>
+        </section>
+
+        <section class="featured section-3" id="duende-3">
+
+            <div class="featured__container-3 container grid">
+                <h2 class="section__title">
+                    Duende Verde
+                </h2>
+    
+                <div class="featured__group-3">
+                    <img src="img/duende 2.png" alt="" class="featured__img-3">
+
+                    <div class="featured__card-3 featured__card-7">
+                        <h3 class="featured__card-title-3">Alter ego psicótico</h3>
+                        <p class="featured__card-description-3">Insanidade gerada pela <br> indução do soro mutágênico
+                        </p>
+                    </div>
+
+                    <div class="featured__card featured__card-8">
+                        <h3 class="featured__card-title-3">Habilidades</h3>
+                        <p class="featured__card-description-3">Grande estrategista <br> Mestre em combate corpo-a-corpo
+                            <br> Exímio inventor</p>
+                    </div>
+
+                    <div class="featured__card featured__card-9">
+                        <h3 class="featured__card-title-3">Fraquezas</h3>
+                        <p class="featured__card-description-3">Insanidade <br> Seu filho</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="featured3__data">
+
+                    <p class="featured2__description-3">
+                        O Duende Verde, alter ego psicótico de Norman Osborn, é um dos principais inimigos do
+                        Homem-Aranha (para muitos o maior) e por consequência um dos principais vilões do universo
+                        Marvel.
+                        O Duende Verde é a manifestação da insanidade gerada pela indução de substâncias químicas (soro
+                        mutágênico) no cientista Norman Osborn, dono da Oscorp.
+                        Nenhum vilão fez tanto quanto o alter-ego de Norman Osborn para arruinar o Escalador de Paredes.
+                        Ele descobriu a identidade do Homem-Aranha e apesar de não se lembrar sempre dela em função de
+                        suas periódicas voltas à sanidade, ao novamente sucumbir à loucura ele sempre usava a estratégia
+                        de atacar Peter Parker aterrorizando seus amigos e amores.
+                        Fala-se Duende Verde original, pois existiram vários outros que sucederam o Norman, surgidos
+                        depois que ele foi dado como morto. Só retornaria muito tempo depois. A maioria das pessoas que
+                        usou esse nome entrou em contato com um soro mutagênico em algum momento de suas vidas. O soro
+                        concede força, agilidade e resistência (o suficiente para resistir a disparos de armas de médio
+                        calibre), mas acaba perturbando a mente do infectado em maior ou menor grau.
+                    </p>
+                </div>
+        </section>
+
+        <section class="featured section-4" id="mysterio-4">
+
+            <div class="featured__container-4 container grid">
+                <h2 class="section__title">
+                    Mysterio
+                </h2>
+                <div class="featured__group-4">
+                    <img src="img/mysterio 2.png" alt="" class="featured__img-4">
+
+                    <div class="featured__card-4 featured__card-10">
+                        <h3 class="featured__card-title-4">Especialista em efeitos visuais</h3>
+                        <p class="featured__card-description-4">Ilusionista e <br> hipnotizador </p>
+                    </div>
+
+                    <div class="featured__card featured__card-11">
+                        <h3 class="featured__card-title-4">Habilidades</h3>
+                        <p class="featured__card-description-4">Faz uso de efeitos especiais e técnicas de dublê.</p>
+                    </div>
+
+                    <div class="featured__card featured__card-12">
+                        <h3 class="featured__card-title-4">Fraquezas</h3>
+                        <p class="featured__card-description-4">Falta de tecnologia <br> Falta de conexão</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="" alt="" class="featured__map-4">
+                <div class="featured4__data">
+
+                    <p class="featured2__description-4">
+                        Quentin Beck era um dublê que logo se interessou pela área de efeitos especiais, tornando-se um
+                        dos maiores especialistas. Quando perdeu seu emprego no cinema, ele se voltou para o crime,
+                        primeiro trabalhando com um dos membros da gangue do Consertador. Mais tarde, decidiu empregar
+                        seus talentos de uma forma mais rentável. Assim sendo, estudou detalhadamente os poderes do
+                        Homem-Aranha, no intuito de conseguir imitá-los quase à perfeição. Intento conseguido, Beck
+                        iniciou uma série de assaltos usando a identidade do Aranha.
+                        Para completar a farsa, Quentin confeccionou um uniforme e, adotando o nome de Mysterio,
+                        apresentou-se na redação do Clarim Diário dizendo que atrairia o Aranha para uma armadilha e
+                        acabaria de uma vez por todas com a ameaça que ele representava. Mysterio ainda propôs revelar a
+                        identidade do herói para o Clarim, desde que recebesse uma compensação financeira para tanto.
+                        Originalmente, Quentin Beck não possui poderes sobre humanos, mas é um hábil lutador e atleta
+                        que conseguiu desenvolver um grande repertório de ilusões e efeitos especiais semelhantes aos
+                        usados em filmagens. Ele também é um hipnotizador e prestidigitador capaz de realizar vários
+                        truques mágicos ao mesmo tempo.
+                    </p>
+                </div>
+        </section>
+
+        <section class="featured section-5" id="lagarto-5">
+
+            <div class="featured__container-5 container grid">
+                <h2 class="section__title">
+                    Lagarto
+                </h2>
+                <div class="featured__group-5">
+                    <img src="img/lagarto 2.png" alt="" class="featured__img-5">
+
+                    <div class="featured__card-5 featured__card-13">
+                        <h3 class="featured__card-title-5">Ciêntista e cirurgião</h3>
+                        <p class="featured__card-description-5">Inspirado pela <br> regeneração dos répteis</p>
+                    </div>
+
+                    <div class="featured__card featured__card-14">
+                        <h3 class="featured__card-title-5">Habilidades</h3>
+                        <p class="featured__card-description-5">Alto fator de cura <br> Telepatia com répteis <br> Super
+                            Velocidade</p>
+                    </div>
+
+                    <div class="featured__card featured__card-15">
+                        <h3 class="featured__card-title-5">Fraquezas</h3>
+                        <p class="featured__card-description-5">Frio <br></p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="featured5__data">
+                    <p class="featured2__description-5">
+                        O Dr. Curt Connors, reservista do Exército dos Estados Unidos da América, foi um cirurgião
+                        mandado para a Guerra do Vietnã, onde perdeu o braço direito. Inspirado na capacidade de
+                        regeneração dos répteis, ele tornou-se um cientistae dedicou-se a estudar uma fórmula química
+                        que o fizesse recuperar o membro perdido. A sua pesquisa conduziu-o a um soro de répteis, que
+                        ele injetou em si mesmo, porém com o efeito colateral de tê-lo transformado em uma criatura meio
+                        humana, meio réptil: o Lagarto. Além da capacidade de regenerar órgãos ou membros perdidos, o
+                        Lagarto tem uma força descomunal, várias vezes superior à média humana, além da rapidez e
+                        agilidade características dos répteis, fora a capacidade de escalada em superfícies rugosas. Ele
+                        também tem o poder de controlar todos os répteis perto de si, mas não costuma usá-los com muita
+                        frequência.
+                        O Lagarto deseja destruir todos os mamíferos da face da Terra. Para tanto constrói vários
+                        equipamentos e máquinas, mas sempre é detido pelo Homem-Aranha.
+                    </p>
+                </div>
+        </section>
+
+        <section class="featured section-6" id="areia-6">
+
+            <div class="featured__container-6 container grid">
+                <h2 class="section__title">
+                    Homem-Areia
+                </h2>
+                <div class="featured__group-6">
+                    <img src="img/sandman 2.png" alt="" class="featured__img-6">
+
+                    <div class="featured__card featured__card-16">
+                        <h3 class="featured__card-title-6">Acidente radioativo</h3>
+                        <p class="featured__card-description-6"> O impacto indireto de radiação que sofreu <br> com a
+                            areia lhe deu poderes</p>
+                    </div>
+
+                    <div class="featured__card featured__card-17">
+                        <h3 class="featured__card-title-6">Habilidades</h3>
+                        <p class="featured__card-description-6">Materializar qualquer objeto atravez da areia <br>
+                            Alterar fisonomia <br> Fator de cura</p>
+                    </div>
+
+                    <div class="featured__card featured__card-18">
+                        <h3 class="featured__card-title-6">Fraquezas</h3>
+                        <p class="featured__card-description-6">Calor Intenso <br> Alta quantidade de aguá</p>
+                    </div>
+                </div>
+            </div>
+
+                <div class="featured6__data">
+
+                    <p class="featured2__description-6">
+                        William Baker, quando criança, morava no Brooklin e perdeu seu pai muito cedo. A partir de certa
+                        idade, ele entrou para o mundo do crime usando o nome de Flint Marko. Antes um criminoso comum,
+                        ele acabou sendo preso e enviado a uma colônia penal na Polinésia Francesa. Quando conseguiu
+                        escapar da prisão fugiu para uma ilha próxima, ignorando o fato de que na ilha estava para se
+                        realizar um teste de arma nuclear. O impacto indireto de radiação que sofreu em contato com a
+                        areia da praia lhe concedeu o poder de se transformar em uma grande massa de areia que pode
+                        assumir qualquer forma. Geralmente usa seu poder para moldar seus braços na forma de marretas
+                        descomunais para atacar seus inimigos, e para penetrar frestas, o que facilita a pratica de
+                        furtos. Originalmente, os poderes de Flint Marko consistiam em controle de areia, podendo ficar
+                        enorme, mudar-se em qualquer forma, ficar bem fino, podendo assim entrar em qualquer lugar e se
+                        endurecer como uma rocha. Ele é quase impossível de se prender, já que pode ficar fino e passar
+                        por qualquer passagem e é muito difícil de destruir. Mas não é completamente invulnerável, já
+                        que é feito de areia. Sendo assim, a água pode desfazê-lo.
+                    </p>
+                </div>
+        </section>
+
+        <!--==================== LOGOS ====================-->
+        <section class="logos section">
+            <div class="logos__container container grid">
+                <div class="logos__content">
+                    <img src="img/logo 1.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="img/logo 2.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="img/logo3.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="img/logo4.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="img/logo5.png" alt="" class="logos__img">
+                </div>
+
+                <div class="logos__content">
+                    <img src="img/logo6.png" alt="" class="logos__img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--====== FOOTER ======-->
+    <footer class="footer section">
+        <div class="shape shape__big"></div>
+        <div class="shape shape__small"></div>
+
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <i class="ri-gitlab-line"></i> Spidercrypt
+                </a>
+                <p class="footer__description">
+                    O spidercrypt é um site onde o assunto principal é o Homem-Aranha e seus principais viloes,
+                    especificando as habilidades e fraquezas.
+                    Somos um grupo de alunos do 1º semestre do curso de
+                    analise e desenvolvimento de sistemas na universidade nove de julho.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Participantes
+                </h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a target="_blank" href="#" class="footer__link">@Breno</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/oguerra___/"
+                            class="footer__link">@Guilherme</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/lepre_skt/"
+                            class="footer__link">@Henrique</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/ingryd.rodriguees/"
+                            class="footer__link">@Ingryd</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/le_oliv3ira/"
+                            class="footer__link">@Leandro</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/leo_ragassio/"
+                            class="footer__link">@Leonardo</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="footer__link">@Levi</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="#" class="footer__link">@Matheus</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/poxavidavan/"
+                            class="footer__link">@Vanessa</a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/frediani1_/" class="footer__link">@Wagner</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer__content">
+                <h3 class="footer__title">
+                    Siga-nos
+                </h3>
+                <ul class="footer__social">
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="ri-twitter-line"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/spidercrypts/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-circle-line"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">
+            &#169; Spidercrypt. Todos os direitos reservados.
+        </span>
+        <div id="particles-js"></div>
+        <script type="text/javascript" src="js/particles.js"></script>
+        <script type="text/javascript" src="js/app.js">
+        </script>
+    </footer>
+
+
+
+    <!--====== RODAR PRA CIMA ======-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-circle-line"></i>
+    </a>
+    <!--====== SCROLL REVEAL ======-->
+    <script src="js/scrollreveal.min.js"></script>
+
+    <!--====== SWIPER JS ======-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--====== MAIN JS ======-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
